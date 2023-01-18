@@ -14,7 +14,7 @@ $(function () {
         width: "100%",
         height: 640,
         syncScrolling: "single",
-        path: "/admin/plugins/editormd/lib/",
+        path: "/admin/plugins/editormd/lib/", //插件位置
         toolbarModes: 'full',
         /**图片上传配置*/
         imageUpload: true,

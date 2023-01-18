@@ -197,7 +197,8 @@ public class BlogController {
         String newFileName = tempName.toString();
         //创建文件
         File destFile = new File(Constants.FILE_UPLOAD_DIC + newFileName);
-        String fileUrl = MyBlogUtils.getHost(new URI(request.getRequestURL() + "")) + "/upload/" + newFileName;
+        //String fileUrl = MyBlogUtils.getHost(new URI(request.getRequestURL() + "")) + "/upload/" + newFileName;
+        String fileUrl="http://49.235.89.180:8088/images/" + newFileName;
         File fileDirectory = new File(Constants.FILE_UPLOAD_DIC);
         try {
             if (!fileDirectory.exists()) {
